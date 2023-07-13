@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background: #123453;
+}
+
+.titulo{
+    color: white;
+    box-shadow: 1px 2px 1px 1px rebeccapurple;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pantalla{
+    background: #123453;
+    color: white;
+    padding: 2rem;
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: 1rem;
+}
+
+.calculadora{
+    background: #608d9f;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+    border-radius: 1rem;
+    max-width: 100%;
+}
+
+.boton{
+    font-size: 1.5rem;
+    background: #608d9f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 3px 4px 4px #434a4d;
+}
+
+.boton:hover{
+    background: #123453;
+}
+
+#borrar{
+    background: #e65656;
+    padding: .2rem;
+    border-radius: .2rem;
+}
+
+#borrar:hover{
+    background: #e63b3b;
+}
+
+#borrarTodo{
+    background: #e65656;
+    padding: .2rem;
+    border-radius: .2rem;
+}
+
+#borrarTodo:hover{
+    background: #e63b3b;
+}
+
+#igual{
+    background: #e65656;
+    grid-column: span 2;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+#igual:hover{
+    background: #e63b3b;
+}
